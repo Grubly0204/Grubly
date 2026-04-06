@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-teal: #1B7A6E;
+  --color-orange: #E8680A;
+  --color-cream: #FFFBF5;
+  --color-sand: #F5EFE6;
+  --color-body: #3D3530;
+  --color-muted: #8A7F78;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-body bg-cream;
+  }
+}

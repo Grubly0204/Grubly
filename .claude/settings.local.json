@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@14 . --typescript --tailwind --app --no-src-dir --no-eslint --import-alias \"@/*\" --use-npm)",
+      "Bash(npm --version)",
+      "Bash(command -v node)",
+      "Bash(export PATH=\"/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH\")",
+      "Bash(npm install:*)",
+      "Bash(npm show:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npm audit:*)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"messages\"\":[{\"\"role\"\":\"\"user\"\",\"\"content\"\":\"\"plan my week\"\"}]}')",
+      "Bash(node -e \":*)",
+      "Bash(npx tsc:*)",
+      "Bash(/usr/local/bin/npx tsc:*)",
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/bradheppinstall-haigh/.nvm/versions/**)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/**)",
+      "Read(//Users/bradheppinstall-haigh/.volta/bin/**)",
+      "Read(//Users/bradheppinstall-haigh/.local/bin/**)",
+      "Bash(/usr/local/bin/node ./node_modules/.bin/tsc --noEmit)",
+      "Bash(/usr/local/bin/node -e \"const Stripe = require\\(''stripe''\\); console.log\\(Stripe.LATEST_API_VERSION\\)\")"
+    ]
+  }
+}
