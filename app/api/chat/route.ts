@@ -96,7 +96,7 @@ You know everything about:
 - Weekly food budget: £${budget} TOTAL for all meals across the entire week
 - Dietary requirements: ${profile?.dietary_requirements?.length ? profile.dietary_requirements.join(", ") : "none"}
 
-${pastMealNames.length > 0 ? `**Recently eaten (don't repeat):** ${[...new Set(pastMealNames)].slice(0, 15).join(", ")}` : "First time planning — make it a great intro!"}
+${pastMealNames.length > 0 ? `**Recently eaten (don't repeat):** ${Array.from(new Set(pastMealNames)).slice(0, 15).join(", ")}` : "First time planning — make it a great intro!"}
 
 **STRICT BUDGET RULES — this is critical:**
 - Total weekly budget is £${budget} for ${people} people covering ALL 21 meals
