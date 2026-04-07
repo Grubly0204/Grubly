@@ -3,9 +3,7 @@ import { getStripe } from "@/lib/stripe";
 import { supabaseAdmin } from "@/lib/supabase-server";
 import type Stripe from "stripe";
 
-export const config = {
-  api: { bodyParser: false },
-};
+export const dynamic = "force-dynamic";
 
 async function syncSubscription(subscription: Stripe.Subscription) {
   const customerId = subscription.customer as string;

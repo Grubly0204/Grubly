@@ -22,7 +22,8 @@
       "Bash(/usr/local/bin/node ./node_modules/.bin/tsc --noEmit)",
       "Bash(/usr/local/bin/node -e \"const Stripe = require\\(''stripe''\\); console.log\\(Stripe.LATEST_API_VERSION\\)\")",
       "Bash(gh repo:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(gh api:*)"
     ]
   }
 }
