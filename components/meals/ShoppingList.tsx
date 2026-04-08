@@ -62,7 +62,7 @@ export default function ShoppingList({
     setChecked((prev) => {
       const next = new Set(prev);
       next.has(itemName) ? next.delete(itemName) : next.add(itemName);
-      localStorage.setItem(`${STORAGE_KEY}_${planId}`, JSON.stringify([...next]));
+      localStorage.setItem(`${STORAGE_KEY}_${planId}`, JSON.stringify(Array.from(next)));
       return next;
     });
   }
